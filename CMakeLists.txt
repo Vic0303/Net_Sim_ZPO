@@ -13,9 +13,11 @@ set(SOURCE_FILES
 
 add_executable(Net_Sim_ZPO ${SOURCE_FILES} main.cpp)
 
-set(SOURCES_FILES_TESTS
+target_include_directories(Net_Sim_ZPO PUBLIC include)
 
+set(SOURCES_FILES_TESTS
         )
 
 add_executable(my_project_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
+
 

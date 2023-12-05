@@ -55,6 +55,8 @@ build CMakeFiles/Net_Sim_ZPO.dir/src/package.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_
   INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include"
   OBJECT_DIR = CMakeFiles\Net_Sim_ZPO.dir
   OBJECT_FILE_DIR = CMakeFiles\Net_Sim_ZPO.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO.dir\
+  TARGET_PDB = Net_Sim_ZPO.pdb
 
 build CMakeFiles/Net_Sim_ZPO.dir/main.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/main.cpp || cmake_object_order_depends_target_Net_Sim_ZPO
   DEP_FILE = CMakeFiles\Net_Sim_ZPO.dir\main.cpp.obj.d
@@ -62,6 +64,8 @@ build CMakeFiles/Net_Sim_ZPO.dir/main.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_Debug C
   INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include"
   OBJECT_DIR = CMakeFiles\Net_Sim_ZPO.dir
   OBJECT_FILE_DIR = CMakeFiles\Net_Sim_ZPO.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO.dir\
+  TARGET_PDB = Net_Sim_ZPO.pdb
 
 
 # =============================================================================
@@ -77,50 +81,88 @@ build Net_Sim_ZPO.exe: CXX_EXECUTABLE_LINKER__Net_Sim_ZPO_Debug CMakeFiles/Net_S
   OBJECT_DIR = CMakeFiles\Net_Sim_ZPO.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO.dir\
   TARGET_FILE = Net_Sim_ZPO.exe
   TARGET_IMPLIB = libNet_Sim_ZPO.dll.a
-  TARGET_PDB = Net_Sim_ZPO.exe.dbg
+  TARGET_PDB = Net_Sim_ZPO.pdb
 
 # =============================================================================
-# Object build statements for EXECUTABLE target my_project_test
+# Object build statements for EXECUTABLE target Net_Sim_ZPO_test
 
 
 #############################################
-# Order-only phony target for my_project_test
+# Order-only phony target for Net_Sim_ZPO_test
 
-build cmake_object_order_depends_target_my_project_test: phony || CMakeFiles/my_project_test.dir
+build cmake_object_order_depends_target_Net_Sim_ZPO_test: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build CMakeFiles/my_project_test.dir/src/package.cpp.obj: CXX_COMPILER__my_project_test_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/src/package.cpp || cmake_object_order_depends_target_my_project_test
-  DEP_FILE = CMakeFiles\my_project_test.dir\src\package.cpp.obj.d
+build CMakeFiles/Net_Sim_ZPO_test.dir/src/package.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_test_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/src/package.cpp || cmake_object_order_depends_target_Net_Sim_ZPO_test
+  DEFINES = -DEXERCISE_ID=EXERCISE_ID_NODES
+  DEP_FILE = CMakeFiles\Net_Sim_ZPO_test.dir\src\package.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -Werror -Wpedantic -pedantic-errors
-  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include"
-  OBJECT_DIR = CMakeFiles\my_project_test.dir
-  OBJECT_FILE_DIR = CMakeFiles\my_project_test.dir\src
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/mocks" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = CMakeFiles\Net_Sim_ZPO_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Net_Sim_ZPO_test.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO_test.dir\
+  TARGET_PDB = Net_Sim_ZPO_test.pdb
 
-build CMakeFiles/my_project_test.dir/test/main_gtest.cpp.obj: CXX_COMPILER__my_project_test_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/test/main_gtest.cpp || cmake_object_order_depends_target_my_project_test
-  DEP_FILE = CMakeFiles\my_project_test.dir\test\main_gtest.cpp.obj.d
+build CMakeFiles/Net_Sim_ZPO_test.dir/test/main_gtest.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_test_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/test/main_gtest.cpp || cmake_object_order_depends_target_Net_Sim_ZPO_test
+  DEFINES = -DEXERCISE_ID=EXERCISE_ID_NODES
+  DEP_FILE = CMakeFiles\Net_Sim_ZPO_test.dir\test\main_gtest.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -Werror -Wpedantic -pedantic-errors
-  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include"
-  OBJECT_DIR = CMakeFiles\my_project_test.dir
-  OBJECT_FILE_DIR = CMakeFiles\my_project_test.dir\test
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/mocks" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = CMakeFiles\Net_Sim_ZPO_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Net_Sim_ZPO_test.dir\test
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO_test.dir\
+  TARGET_PDB = Net_Sim_ZPO_test.pdb
+
+build CMakeFiles/Net_Sim_ZPO_test.dir/test/test_nodes.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_test_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/test/test_nodes.cpp || cmake_object_order_depends_target_Net_Sim_ZPO_test
+  DEFINES = -DEXERCISE_ID=EXERCISE_ID_NODES
+  DEP_FILE = CMakeFiles\Net_Sim_ZPO_test.dir\test\test_nodes.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -Werror -Wpedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/mocks" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = CMakeFiles\Net_Sim_ZPO_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Net_Sim_ZPO_test.dir\test
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO_test.dir\
+  TARGET_PDB = Net_Sim_ZPO_test.pdb
+
+build CMakeFiles/Net_Sim_ZPO_test.dir/test/test_package.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_test_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/test/test_package.cpp || cmake_object_order_depends_target_Net_Sim_ZPO_test
+  DEFINES = -DEXERCISE_ID=EXERCISE_ID_NODES
+  DEP_FILE = CMakeFiles\Net_Sim_ZPO_test.dir\test\test_package.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -Werror -Wpedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/mocks" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = CMakeFiles\Net_Sim_ZPO_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Net_Sim_ZPO_test.dir\test
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO_test.dir\
+  TARGET_PDB = Net_Sim_ZPO_test.pdb
+
+build CMakeFiles/Net_Sim_ZPO_test.dir/test/test_storage_types.cpp.obj: CXX_COMPILER__Net_Sim_ZPO_test_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/test/test_storage_types.cpp || cmake_object_order_depends_target_Net_Sim_ZPO_test
+  DEFINES = -DEXERCISE_ID=EXERCISE_ID_NODES
+  DEP_FILE = CMakeFiles\Net_Sim_ZPO_test.dir\test\test_storage_types.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -Werror -Wpedantic -pedantic-errors
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/mocks" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = CMakeFiles\Net_Sim_ZPO_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Net_Sim_ZPO_test.dir\test
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO_test.dir\
+  TARGET_PDB = Net_Sim_ZPO_test.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target my_project_test
+# Link build statements for EXECUTABLE target Net_Sim_ZPO_test
 
 
 #############################################
-# Link the executable my_project_test.exe
+# Link the executable Net_Sim_ZPO_test.exe
 
-build my_project_test.exe: CXX_EXECUTABLE_LINKER__my_project_test_Debug CMakeFiles/my_project_test.dir/src/package.cpp.obj CMakeFiles/my_project_test.dir/test/main_gtest.cpp.obj
+build Net_Sim_ZPO_test.exe: CXX_EXECUTABLE_LINKER__Net_Sim_ZPO_test_Debug CMakeFiles/Net_Sim_ZPO_test.dir/src/package.cpp.obj CMakeFiles/Net_Sim_ZPO_test.dir/test/main_gtest.cpp.obj CMakeFiles/Net_Sim_ZPO_test.dir/test/test_nodes.cpp.obj CMakeFiles/Net_Sim_ZPO_test.dir/test/test_package.cpp.obj CMakeFiles/Net_Sim_ZPO_test.dir/test/test_storage_types.cpp.obj | lib/libgmockd.a lib/libgtestd.a || lib/libgmockd.a lib/libgtestd.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\my_project_test.dir
+  LINK_LIBRARIES = lib/libgmockd.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Net_Sim_ZPO_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = my_project_test.exe
-  TARGET_IMPLIB = libmy_project_test.dll.a
-  TARGET_PDB = my_project_test.exe.dbg
+  TARGET_COMPILE_PDB = CMakeFiles\Net_Sim_ZPO_test.dir\
+  TARGET_FILE = Net_Sim_ZPO_test.exe
+  TARGET_IMPLIB = libNet_Sim_ZPO_test.dll.a
+  TARGET_PDB = Net_Sim_ZPO_test.pdb
 
 
 #############################################
@@ -145,12 +187,420 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build googletest-master/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build googletest-master/edit_cache: phony googletest-master/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build googletest-master/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO" -B"C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build googletest-master/rebuild_cache: phony googletest-master/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build googletest-master/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build googletest-master/CMakeFiles/install.util: CUSTOM_COMMAND googletest-master/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build googletest-master/install: phony googletest-master/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build googletest-master/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-master/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build googletest-master/install/local: phony googletest-master/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build googletest-master/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-master/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build googletest-master/install/strip: phony googletest-master/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = googletest-master\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wpedantic -pedantic-errors -std=c++17
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = googletest-master\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = googletest-master\googlemock\CMakeFiles\gmock.dir\src
+  TARGET_COMPILE_PDB = bin\libgmockd.pdb
+  TARGET_PDB = bin\libgmockd.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib\libgmockd.a
+
+build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = googletest-master\googlemock\CMakeFiles\gmock.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\libgmockd.pdb
+  TARGET_FILE = lib\libgmockd.a
+  TARGET_PDB = bin\libgmockd.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = googletest-master\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wpedantic -pedantic-errors -std=c++17
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = googletest-master\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = googletest-master\googlemock\CMakeFiles\gmock_main.dir\src
+  TARGET_COMPILE_PDB = bin\libgmock_maind.pdb
+  TARGET_PDB = bin\libgmock_maind.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib\libgmock_maind.a
+
+build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmockd.a lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = googletest-master\googlemock\CMakeFiles\gmock_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\libgmock_maind.pdb
+  TARGET_FILE = lib\libgmock_maind.a
+  TARGET_PDB = bin\libgmock_maind.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build googletest-master/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googlemock" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build googletest-master/googlemock/edit_cache: phony googletest-master/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build googletest-master/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googlemock" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO" -B"C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build googletest-master/googlemock/rebuild_cache: phony googletest-master/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build googletest-master/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build googletest-master/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND googletest-master/googlemock/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googlemock" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build googletest-master/googlemock/install: phony googletest-master/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build googletest-master/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-master/googlemock/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googlemock" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build googletest-master/googlemock/install/local: phony googletest-master/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build googletest-master/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-master/googlemock/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googlemock" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build googletest-master/googlemock/install/strip: phony googletest-master/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || googletest-master/googletest/CMakeFiles/gtest.dir
+
+build googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = googletest-master\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wpedantic -pedantic-errors -std=c++17
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = googletest-master\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = googletest-master\googletest\CMakeFiles\gtest.dir\src
+  TARGET_COMPILE_PDB = bin\libgtestd.pdb
+  TARGET_PDB = bin\libgtestd.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib\libgtestd.a
+
+build lib/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = googletest-master\googletest\CMakeFiles\gtest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\libgtestd.pdb
+  TARGET_FILE = lib\libgtestd.a
+  TARGET_PDB = bin\libgtestd.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = googletest-master\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wall -Wextra -Werror -Wpedantic -pedantic-errors -std=c++17
+  INCLUDES = -I"C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/include" -isystem "C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest"
+  OBJECT_DIR = googletest-master\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = googletest-master\googletest\CMakeFiles\gtest_main.dir\src
+  TARGET_COMPILE_PDB = bin\libgtest_maind.pdb
+  TARGET_PDB = bin\libgtest_maind.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib\libgtest_maind.a
+
+build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtestd.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = googletest-master\googletest\CMakeFiles\gtest_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = bin\libgtest_maind.pdb
+  TARGET_FILE = lib\libgtest_maind.a
+  TARGET_PDB = bin\libgtest_maind.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build googletest-master/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googletest" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build googletest-master/googletest/edit_cache: phony googletest-master/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build googletest-master/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googletest" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO" -B"C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build googletest-master/googletest/rebuild_cache: phony googletest-master/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build googletest-master/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build googletest-master/googletest/CMakeFiles/install.util: CUSTOM_COMMAND googletest-master/googletest/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googletest" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build googletest-master/googletest/install: phony googletest-master/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build googletest-master/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-master/googletest/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googletest" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build googletest-master/googletest/install/local: phony googletest-master/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build googletest-master/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-master/googletest/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\wikto\OneDrive\Pulpit\3 semestr\ZPO\Net_Sim_ZPO\cmake-build-debug\googletest-master\googletest" && "C:\Users\wikto\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build googletest-master/googletest/install/strip: phony googletest-master/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
 
 build Net_Sim_ZPO: phony Net_Sim_ZPO.exe
 
-build my_project_test: phony my_project_test.exe
+build Net_Sim_ZPO_test: phony Net_Sim_ZPO_test.exe
+
+build gmock: phony lib/libgmockd.a
+
+build gmock_main: phony lib/libgmock_maind.a
+
+build gtest: phony lib/libgtestd.a
+
+build gtest_main: phony lib/libgtest_maind.a
+
+build libgmock_maind.a: phony lib/libgmock_maind.a
+
+build libgmockd.a: phony lib/libgmockd.a
+
+build libgtest_maind.a: phony lib/libgtest_maind.a
+
+build libgtestd.a: phony lib/libgtestd.a
 
 # =============================================================================
 # Folder targets.
@@ -160,7 +610,28 @@ build my_project_test: phony my_project_test.exe
 #############################################
 # Folder: C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/cmake-build-debug
 
-build all: phony Net_Sim_ZPO.exe my_project_test.exe
+build all: phony Net_Sim_ZPO.exe Net_Sim_ZPO_test.exe googletest-master/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/cmake-build-debug/googletest-master
+
+build googletest-master/all: phony googletest-master/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/cmake-build-debug/googletest-master/googlemock
+
+build googletest-master/googlemock/all: phony lib/libgmockd.a lib/libgmock_maind.a googletest-master/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/wikto/OneDrive/Pulpit/3 semestr/ZPO/Net_Sim_ZPO/cmake-build-debug/googletest-master/googletest
+
+build googletest-master/googletest/all: phony lib/libgtestd.a lib/libgtest_maind.a
 
 # =============================================================================
 # Built-in targets
@@ -169,14 +640,14 @@ build all: phony Net_Sim_ZPO.exe my_project_test.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCCompiler.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestRCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPython.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPython/Support.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/cmake/gmock.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/cmake/gmock_main.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/Config.cmake.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/gtest.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/gtest_main.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCCompiler.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestRCCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPython.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPython/Support.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/wikto/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/cmake/gmock.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googlemock/cmake/gmock_main.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/CMakeLists.txt C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/Config.cmake.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/gtest.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/gtest_main.pc.in C$:/Users/wikto/OneDrive/Pulpit/3$ semestr/ZPO/Net_Sim_ZPO/googletest-master/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

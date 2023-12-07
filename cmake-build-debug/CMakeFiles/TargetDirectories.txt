@@ -1,4 +1,4 @@
-C:/Users/artur/AGH/CLion/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/Net_Sim_ZPO.dir
-C:/Users/artur/AGH/CLion/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/my_project_test.dir
-C:/Users/artur/AGH/CLion/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/artur/AGH/CLion/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/artur/CLionProjects/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/Net_Sim_ZPO.dir
+C:/Users/artur/CLionProjects/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/my_project_test.dir
+C:/Users/artur/CLionProjects/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/artur/CLionProjects/Net_Sim_ZPO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

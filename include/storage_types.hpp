@@ -10,6 +10,7 @@ class IPackageStockpile{
 public:
 };
 
+
 class IPackageQueue : public IPackageStockpile{
 public:
     virtual Package pop() = 0;

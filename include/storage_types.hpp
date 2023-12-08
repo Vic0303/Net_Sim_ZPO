@@ -12,6 +12,7 @@ enum class PackageQueueType{
     FIFO,LIFO
 };
 
+
 class IPackageStockpile{
 public:
     virtual void push(Package&& package);

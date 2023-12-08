@@ -216,6 +216,54 @@ test/main_gtest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_project_test.dir\build.make CMakeFiles/my_project_test.dir/test/main_gtest.cpp.s
 .PHONY : test/main_gtest.cpp.s
 
+test/test_package.obj: test/test_package.cpp.obj
+.PHONY : test/test_package.obj
+
+# target to build an object file
+test/test_package.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_project_test.dir\build.make CMakeFiles/my_project_test.dir/test/test_package.cpp.obj
+.PHONY : test/test_package.cpp.obj
+
+test/test_package.i: test/test_package.cpp.i
+.PHONY : test/test_package.i
+
+# target to preprocess a source file
+test/test_package.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_project_test.dir\build.make CMakeFiles/my_project_test.dir/test/test_package.cpp.i
+.PHONY : test/test_package.cpp.i
+
+test/test_package.s: test/test_package.cpp.s
+.PHONY : test/test_package.s
+
+# target to generate assembly for a file
+test/test_package.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_project_test.dir\build.make CMakeFiles/my_project_test.dir/test/test_package.cpp.s
+.PHONY : test/test_package.cpp.s
+
+test/test_storage_types.obj: test/test_storage_types.cpp.obj
+.PHONY : test/test_storage_types.obj
+
+# target to build an object file
+test/test_storage_types.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_project_test.dir\build.make CMakeFiles/my_project_test.dir/test/test_storage_types.cpp.obj
+.PHONY : test/test_storage_types.cpp.obj
+
+test/test_storage_types.i: test/test_storage_types.cpp.i
+.PHONY : test/test_storage_types.i
+
+# target to preprocess a source file
+test/test_storage_types.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_project_test.dir\build.make CMakeFiles/my_project_test.dir/test/test_storage_types.cpp.i
+.PHONY : test/test_storage_types.cpp.i
+
+test/test_storage_types.s: test/test_storage_types.cpp.s
+.PHONY : test/test_storage_types.s
+
+# target to generate assembly for a file
+test/test_storage_types.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_project_test.dir\build.make CMakeFiles/my_project_test.dir/test/test_storage_types.cpp.s
+.PHONY : test/test_storage_types.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -235,6 +283,12 @@ help:
 	@echo ... test/main_gtest.obj
 	@echo ... test/main_gtest.i
 	@echo ... test/main_gtest.s
+	@echo ... test/test_package.obj
+	@echo ... test/test_package.i
+	@echo ... test/test_package.s
+	@echo ... test/test_storage_types.obj
+	@echo ... test/test_storage_types.i
+	@echo ... test/test_storage_types.s
 .PHONY : help
 
 

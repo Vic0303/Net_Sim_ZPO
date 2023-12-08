@@ -140,6 +140,12 @@
 		<Unit filename="C:/Users/artur/AGH/CLion/Net_Sim_ZPO/test/main_gtest.cpp">
 			<Option target="my_project_test"/>
 		</Unit>
+		<Unit filename="C:/Users/artur/AGH/CLion/Net_Sim_ZPO/test/test_package.cpp">
+			<Option target="my_project_test"/>
+		</Unit>
+		<Unit filename="C:/Users/artur/AGH/CLion/Net_Sim_ZPO/test/test_storage_types.cpp">
+			<Option target="my_project_test"/>
+		</Unit>
 		<Unit filename="C:/Users/artur/AGH/CLion/Net_Sim_ZPO/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

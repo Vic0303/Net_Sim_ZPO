@@ -1,11 +1,7 @@
-#include "package.hpp"
-//
-// Created by wikto on 28.11.2023.
-//
-
 //Do realizacji mechanizmu przydzielania unikalnego ID możesz użyć dwóch pól
 // statycznych typu set<ElementID> – jeden zbiór (assigned_IDs) przechowywać
 // będzie przydzielone obecnie ID, a drugi (freed_IDs) ID kiedyś użyte, ale obecnie zwolnione:
+#include "package.hpp"
 std::set<ElementID> Package::assigned_IDs = {};
 std::set<ElementID> Package::freed_IDs = {};
 
@@ -19,28 +15,48 @@ Package::Package() {
     //1
     // większy od największego identyfikatora w zbiorze assigned_IDs (każdorazowo zbiór
     // assigned_IDs jest odpowiednio aktua
-
+    ElementID new_id;
     if (!freed_IDs.empty())
     {
-        ID_ = *freed_IDs.begin();
-        freed_IDs.erase(*freed_IDs.begin());
+        new_id = *freed_IDs.begin();
+        freed_IDs.erase(new_id);
     }
     else if (assigned_IDs.empty() && freed_IDs.empty()) {
-        ID_ = 1;
+        new_id = 1;
     }
 
-    else if (!assigned_IDs.empty())
+    else
     {
-        ID_ = *assigned_IDs.end() + 1;
+        new_id = *assigned_IDs.end() + 1;
     }
-    assigned_IDs.insert(ID_);
+    assigned_IDs.insert(id_);
+    id_=new_id;
 }
 
+
+
+Package::Package(Package &&p)
+{
+    id_ = p.id_;
+    p.id_ = -1;
+}
+
+Package &Package::operator=(Package &&p)    {
+    if(id_ != -1){
+        freed_IDs.insert(id_);
+        assigned_IDs.erase(id_);
+    }
+    id_ = p.id_;
+    p.id_ = -1;
+    return *this;
+}
 
 //Podczas usuwania obiektu klasy Package należy przenieść jego
 // identyfikator ze zbioru assigned_IDs do zbioru freed_IDs.
 
 Package::~Package() {
-    freed_IDs.insert(ID_);
-    assigned_IDs.erase(ID_);
+    if(id_ != -1) {
+        freed_IDs.insert(id_);
+        assigned_IDs.erase(id_);
+    }
 }

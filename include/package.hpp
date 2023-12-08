@@ -1,7 +1,3 @@
-//
-// Created by wikto on 28.11.2023.
-//
-
 #ifndef NET_SIM_ZPO_PACKAGE_HPP
 #define NET_SIM_ZPO_PACKAGE_HPP
 
@@ -12,18 +8,18 @@ class Package {
 public:
     Package();
 
-    Package(ElementID);
+    Package(ElementID id): id_(id) {assigned_IDs.insert(id_);}
 
     Package(Package &&);
 
     Package &operator=(Package &&);
 
-    ElementID get_id()const;
+    ElementID get_id() const {return id_; }
 
     ~Package();
 
 private:
-    ElementID ID_;
+    ElementID id_;
     static std::set<ElementID> assigned_IDs;
     static std::set<ElementID> freed_IDs;
 };

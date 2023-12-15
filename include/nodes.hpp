@@ -69,7 +69,7 @@ private:
 
 class Worker : public IPackageReceiver, public PackageSender {
 public:
-    Worker(PackageSender &&packageSender, ElementID id, TimeOffset pd, std::unique_ptr<IPackageQueue> q)
+    Worker(ElementID id, TimeOffset pd, std::unique_ptr<IPackageQueue> q)
             : PackageSender(), id_(id), pd_(pd), q_(std::move(q)) {}
 
     void do_work(Time t);

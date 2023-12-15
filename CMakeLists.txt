@@ -21,7 +21,7 @@ target_include_directories(Net_Sim_ZPO PUBLIC include)
 set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_storage_types.cpp
-)
+        test/test_nodes.cpp)
 
 add_executable(Net_Sim_ZPO_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
 

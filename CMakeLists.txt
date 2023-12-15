@@ -11,6 +11,7 @@ set(SOURCE_FILES
         src/package.cpp
         src/storage_types.cpp
         src/helpers.cpp
+        src/nodes.cpp
         )
 
 add_executable(Net_Sim_ZPO ${SOURCE_FILES} main.cpp)

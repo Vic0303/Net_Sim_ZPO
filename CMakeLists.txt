@@ -11,6 +11,7 @@ set(SOURCE_FILES
         src/package.cpp
         src/storage_types.cpp
         src/helpers.cpp
+        src/nodes.cpp
         )
 
 add_executable(Net_Sim_ZPO ${SOURCE_FILES} main.cpp)
@@ -20,7 +21,7 @@ target_include_directories(Net_Sim_ZPO PUBLIC include)
 set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_storage_types.cpp
-        src/nodes.cpp)
+)
 
 add_executable(Net_Sim_ZPO_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
 

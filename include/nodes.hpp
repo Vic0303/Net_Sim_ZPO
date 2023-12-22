@@ -91,6 +91,9 @@ public:
     IPackageStockpile::const_iterator begin() const override { return d_->begin(); }
     IPackageStockpile::const_iterator end() const override { return d_->end(); }
 
+    #if (defined EXERCISE_ID && EXERCISE_ID != EXERCISE_ID_NODES)
+        ReceiverType get_receiver_type() const override { return ReceiverType::STOREHOUSE; }
+    #endif
 
 private:
     ElementID id_;
@@ -116,6 +119,9 @@ public:
     IPackageStockpile::const_iterator begin() const override { return q_->begin(); }
     IPackageStockpile::const_iterator end() const override { return q_->end(); }
 
+    #if (defined EXERCISE_ID && EXERCISE_ID != EXERCISE_ID_NODES)
+        ReceiverType get_receiver_type() const override { return ReceiverType::WORKER; }
+    #endif
 
 private:
     ElementID id_;

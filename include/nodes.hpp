@@ -146,4 +146,6 @@ private:
     std::optional<Package> bufor_ = std::nullopt;
 };
 
+enum class ReceiverType {WORKER, STOREHOUSE};
+
 #endif //NET_SIM_ZPO_NODES_HPP

@@ -101,12 +101,17 @@ public:
 
 private:
     container_t node_vector_;  // Kontener przechowujący obiekty typu Node
+
 };
 
 
 
 class Factory {
 private:
+    NodeCollection<Worker> worker_;
+    NodeCollection<Ramp> ramp_;
+    NodeCollection<Storehouse> storehouse_;
+    ElementID id_;
 
 public:
     void add_ramp(Ramp&& ramp) {}

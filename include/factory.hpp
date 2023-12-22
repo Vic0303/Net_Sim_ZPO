@@ -12,19 +12,98 @@
 template <typename Node>
 class NodeCollection {
 public:
-    void add(Node&& node) {}
-    void remove_by_id (ElementID id) {}
 
+    //Dla własnej wygody zdefiniuj wewnątrz szablonu klasy
+    // NodeCollection<Node> aliasy na typy iteratorów dla
+    // wybranego kontenera z biblioteki standardowej
+    // (tu oznaczonego roboczo jako std_container_t, Node oznacza
+    // parametr szablonu kolekcji węzłów):
+
+    // Umieszczenie słowa kluczowego `typename`
+    // jest niezbędne aby poinformować
+// kompilator, że `Node` to nazwa typu.
     using container_t = typename std::vector<Node>;
     using iterator = typename container_t::iterator;
     using const_iterator = typename container_t::const_iterator;
 
-    NodeCollection<Node>::iterator find_by_id(ElementID id) {}
-    NodeCollection<Node>::const_iterator find_by_id(ElementID id) const {}
+    // Dodawanie obiektu do kontenera
+    void add(Node&& node) {
+        node_vector_.push_back(std::move(node));
+        //Metoda add() powinna “zawłaszczać” przekazany obiekt węzła
+        //(gdyż wszelkie dalsze odwoływanie się do takiego obiektu węzła
+        // powinno odbywać się poprzez obiekt klasy Factory) –
+        //do realizacji metody add() użyj funkcji std::move().
+    }
+
+    // Wyszukiwanie obiektu po identyfikatorze
+    iterator find_by_id(ElementID id) {
+        auto it = std::find_if(node_vector_.begin(), node_vector_.end(),[id](auto& elem)
+        {
+            return (elem.get_id() == id);
+        });
+        return it;
+    }
+    //W przypadku nieznalezienia elementu o zadanym
+    // ID obie wersje metody find_by_id() (jedna zwracającą
+    // “zwykły” iterator, druga zwracająca const-iterator) powinny
+    //zwrócić iterator na element tuż za końcem zakresu. Obie wersje
+    // metody find_by_id() możesz zrealizować za pomocą jednej instrukcji
+    // , używając algorytmu std::find_if i odpowiedniej lambdy
+    // (zwracającej prawdę w przypadku, gdy ID węzła
+    //w kolekcji pasuje do przekazanego ID).
+
+    // Wyszukiwanie obiektu po identyfikatorze (wersja const)
+    const_iterator find_by_id(ElementID id) const {
+        auto it = std::find_if(node_vector_.cbegin(), node_vector_.cend(),[id](const auto& elem)
+                               { return (elem.get_id() == id);
+                               });
+        return it;
+    }
+
+    // Usuwanie obiektu po identyfikatorze
+    void remove_by_id(ElementID id) {
+        //z wykorzystaniem metody find_by_id() – wystarczy usunąć
+        // element wskazywany przez zwrócony iterator wywołując na
+        // kontenerze metodę erase() (musisz się tylko wcześniej upewnić,
+        // że element faktycznie został znaleziony! –
+        auto it = std::find_if(node_vector_.begin(), node_vector_.end(),[id](auto& elem)
+        {
+            //This code is using the std::find_if algorithm from the C++
+            // Standard Library to search for an element in the range defined
+            // by node_vector_.begin() and node_vector_.end() that satisfies a
+            // certain condition.
+            //Here's a breakdown of each part of the code:
+            return (elem.get_id() == id);
+        });
+        if (it != node_vector_.end())
+        {
+            node_vector_.erase(it);
+        }
+    }
+
+    // Iterator na początek kontenera (wersja const)
+    const_iterator cbegin() const { return node_vector_.cbegin(); }
+
+    // Iterator na koniec kontenera (wersja const)
+    const_iterator cend() const { return node_vector_.cend(); }
+
+    // Iterator na początek kontenera (wersja niemodyfikowalna)
+    const_iterator begin() const { return node_vector_.begin(); }
+
+    // Iterator na koniec kontenera (wersja niemodyfikowalna)
+    const_iterator end() const { return node_vector_.end(); }
+
+    // Iterator na początek kontenera (wersja modyfikowalna)
+    iterator begin() { return node_vector_.begin(); }
+
+    // Iterator na koniec kontenera (wersja modyfikowalna)
+    iterator end() { return node_vector_.end(); }
+
 private:
-    Node node_;
-    ElementID id_;
+    container_t node_vector_;  // Kontener przechowujący obiekty typu Node
+
 };
+
 
 
 class Factory {
@@ -65,8 +144,6 @@ public:
     void do_work(Time time) {}
 
 };
-
-
 
 
 #endif //NET_SIM_ZPO_FACTORY_HPP

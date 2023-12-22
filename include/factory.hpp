@@ -21,12 +21,18 @@ public:
 
     NodeCollection<Node>::iterator find_by_id(ElementID id) {}
     NodeCollection<Node>::const_iterator find_by_id(ElementID id) const {}
-
+private:
+    Node node_;
+    ElementID id_;
 };
 
 
 class Factory {
 private:
+    NodeCollection<Worker> worker_;
+    NodeCollection<Ramp> ramp_;
+    NodeCollection<Storehouse> storehouse_;
+    ElementID id_;
 
 public:
     void add_ramp(Ramp&& ramp) {}

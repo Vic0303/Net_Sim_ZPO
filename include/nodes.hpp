@@ -15,6 +15,8 @@
 #include <map>
 #include "helpers.hpp"
 
+enum class ReceiverType {WORKER, STOREHOUSE};
+
 class IPackageReceiver{
 public:
     virtual void receive_package(Package &&p) = 0;
@@ -25,9 +27,7 @@ public:
     virtual IPackageStockpile::const_iterator cbegin() const = 0;
     virtual IPackageStockpile::const_iterator cend() const = 0;
 
-#if (defined EXERCISE_ID && EXERCISE_ID != EXERCISE_ID_NODES)
     virtual ReceiverType get_receiver_type() const = 0;
-#endif
 
     virtual ~IPackageReceiver() = default;
 };
@@ -37,7 +37,7 @@ public:
     using preferences_t = std::map<IPackageReceiver *, double>;
     using const_iterator = preferences_t::const_iterator;
 
-    explicit ReceiverPreferences(ProbabilityGenerator pg = probability_generator) : pg_(std::move(pg)) {}
+    ReceiverPreferences(ProbabilityGenerator pg = probability_generator) : pg_(std::move(pg)) {}
 
     const_iterator begin() const { return preferences_.cbegin(); }
     const_iterator end() const { return preferences_.cend(); }
@@ -91,9 +91,7 @@ public:
     IPackageStockpile::const_iterator begin() const override { return d_->begin(); }
     IPackageStockpile::const_iterator end() const override { return d_->end(); }
 
-    #if (defined EXERCISE_ID && EXERCISE_ID != EXERCISE_ID_NODES)
-        ReceiverType get_receiver_type() const override { return ReceiverType::STOREHOUSE; }
-    #endif
+    ReceiverType get_receiver_type() const override { return ReceiverType::STOREHOUSE; }
 
 private:
     ElementID id_;
@@ -108,8 +106,6 @@ public:
     TimeOffset get_processing_duration() const { return pd_; }
     Time get_package_processing_start_time() const { return t_; }
 
-    // Funkcja pomocnicza
-    void process_buffer();
 
     void receive_package(Package &&p) override {q_->push(std::move(p)); }
     ElementID get_id() const override { return id_; }
@@ -119,10 +115,9 @@ public:
     IPackageStockpile::const_iterator begin() const override { return q_->begin(); }
     IPackageStockpile::const_iterator end() const override { return q_->end(); }
 
-    #if (defined EXERCISE_ID && EXERCISE_ID != EXERCISE_ID_NODES)
-        ReceiverType get_receiver_type() const override { return ReceiverType::WORKER; }
-    #endif
+    ReceiverType get_receiver_type() const override { return ReceiverType::WORKER; }
 
+    IPackageQueue* get_queue() const {return q_.get() ;}
 private:
     ElementID id_;
     TimeOffset pd_;
@@ -152,6 +147,6 @@ private:
     std::optional<Package> bufor_ = std::nullopt;
 };
 
-enum class ReceiverType {WORKER, STOREHOUSE};
+
 
 #endif //NET_SIM_ZPO_NODES_HPP

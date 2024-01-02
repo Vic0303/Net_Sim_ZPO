@@ -76,7 +76,7 @@ void PackageSender::send_package() {
     if (bufor_)
     {
         receiver = receiver_preferences_.choose_receiver();
-        receiver->receive_package(std::move(*bufor_));
+        receiver->receive_package(std::move(bufor_.value()));
         bufor_.reset();
     }
 }

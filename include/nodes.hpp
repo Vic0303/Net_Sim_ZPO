@@ -61,7 +61,6 @@ public:
     ReceiverPreferences receiver_preferences_;
 
     // konstruktor i konstruktor przenoszący
-    // konstruktor i konstruktor przenoszący
     PackageSender() = default;
     //Konstruktor przenoszący PackageSender(PackageSender&&) powinien mieć domyślną implementację
     PackageSender(PackageSender &&pack_sender) = default;
@@ -106,6 +105,7 @@ public:
     TimeOffset get_processing_duration() const { return pd_; }
     Time get_package_processing_start_time() const { return t_; }
 
+    const std::optional<Package>& get_processing_buffer() const {return bufor_;}
 
     void receive_package(Package &&p) override {q_->push(std::move(p)); }
     ElementID get_id() const override { return id_; }
@@ -123,10 +123,6 @@ private:
     TimeOffset pd_;
     std::unique_ptr<IPackageQueue> q_;
     Time t_{};
-    // Język C++ nie udostępnia specjalnych obiektów i literałów w stylu None w języku Python albo null w
-    // języku Java, umożliwiających każdej zmiennej pełnienie roli bufora, natomiast
-    // począwszy od standardu C++17 funkcjonalność taka jest dostępna z użyciem kontenera
-    // standardowego std::optional.
     std::optional<Package> bufor_ = std::nullopt;
 
 };

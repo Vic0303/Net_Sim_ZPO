@@ -30,6 +30,7 @@ set(SOURCES_FILES_TESTS
         test/test_simulate.cpp
         )
 
+
 add_executable(Net_Sim_ZPO_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
 
 target_include_directories(Net_Sim_ZPO_test PUBLIC

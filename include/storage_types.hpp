@@ -33,7 +33,7 @@ public:
 
 class PackageQueue : public IPackageQueue {
 public:
-
+    using const_iterator = std::list<Package>::const_iterator;
     explicit PackageQueue(PackageQueueType queue_type) : queue(), queue_type(queue_type) {}
     void push(Package&& package) override { queue.emplace_back(std::move(package)); }
     std::size_t size() const override { return queue.size(); }

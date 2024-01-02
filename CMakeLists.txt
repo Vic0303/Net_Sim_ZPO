@@ -14,6 +14,7 @@ set(SOURCE_FILES
         src/nodes.cpp
         src/factory.cpp
         src/reports.cpp
+        src/simulation.cpp
         )
 
 add_executable(Net_Sim_ZPO ${SOURCE_FILES} main.cpp)
@@ -26,6 +27,7 @@ set(SOURCES_FILES_TESTS
         test/test_Factory.cpp
         test/test_factory_io.cpp
         test/test_reports.cpp
+        test/test_simulate.cpp
         )
 
 add_executable(Net_Sim_ZPO_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)

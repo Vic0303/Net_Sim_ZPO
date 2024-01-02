@@ -5,15 +5,13 @@
 #include "package.hpp"
 
 void Worker::do_work(Time t){
-    if(pd_ == 1){
-        bufor_.emplace(q_->pop());
-        push_package(Package(bufor_.value().get_id()));
-        bufor_.reset();
-    }
-    else {
         if (!bufor_ and !q_->empty()){
             bufor_.emplace(q_->pop());
             t_ = t;
+            if ( 1 == pd_){
+                push_package(Package(bufor_.value().get_id()));
+                bufor_.reset();
+                }
         }
         else {
             if ( t - t_ == pd_){
@@ -25,7 +23,7 @@ void Worker::do_work(Time t){
             }
         }
     }
-}
+
 
 
 void ReceiverPreferences::add_receiver(IPackageReceiver *r) {

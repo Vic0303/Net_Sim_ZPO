@@ -6,7 +6,6 @@
 #define NET_SIM_ZPO_REPORTS_HPP
 
 #include "factory.hpp"
-#include "nodes.hpp"
 #include "storage_types.hpp"
 #include <ostream>
 

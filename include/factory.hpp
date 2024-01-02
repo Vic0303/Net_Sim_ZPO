@@ -74,9 +74,13 @@ public:
 
     void do_package_passing();
 
+    const NodeCollection<Worker>& getWorkers() const { return worker_; }
+    const NodeCollection<Ramp>& getRamps() const { return ramp_; }
+    const NodeCollection<Storehouse>& getStorehouses() const { return storehouse_; }
+
 private:
-    NodeCollection<Ramp> ramp_;
     NodeCollection<Worker> worker_;
+    NodeCollection<Ramp> ramp_;
     NodeCollection<Storehouse> storehouse_;
 
     template<class Node>

@@ -10,9 +10,9 @@ public:
 
     Package(ElementID id): id_(id) {assigned_IDs.insert(id_);}
 
-    Package(Package &&);
+    Package(Package&& package) : id_(package.id_) {};
 
-    Package &operator=(Package &&);
+    Package &operator=(Package &&) noexcept;
 
     ElementID get_id() const {return id_; }
 

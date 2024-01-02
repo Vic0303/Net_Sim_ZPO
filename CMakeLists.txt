@@ -12,7 +12,7 @@ set(SOURCE_FILES
         src/storage_types.cpp
         src/helpers.cpp
         src/nodes.cpp
-        src/factory.cpp)
+        src/factory.cpp src/reports.cpp)
 
 add_executable(Net_Sim_ZPO ${SOURCE_FILES} main.cpp)
 
@@ -22,7 +22,7 @@ set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_storage_types.cpp
         test/test_Factory.cpp
-        test/test_factory_io.cpp)
+        test/test_factory_io.cpp test/test_reports.cpp)
 
 add_executable(Net_Sim_ZPO_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
 

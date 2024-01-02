@@ -1,6 +1,5 @@
 #include "factory.hpp"
 #include "types.hpp"
-#include "config.hpp"
 #include <map>
 #include <stdexcept>
 #include <sstream>

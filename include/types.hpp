@@ -6,11 +6,11 @@
 #ifndef NET_SIM_ZPO_TYPES_HPP
 #define NET_SIM_ZPO_TYPES_HPP
 
-    #include <functional>
+#include <functional>
 
-    using ElementID = int;
-    using TimeOffset = int;
-    using Time = int;
-    using ProbabilityGenerator = std::function<double()>;
+using ElementID = unsigned long long;
+using TimeOffset = unsigned long long;
+using Time = unsigned long long;
+using ProbabilityGenerator = std::function<double()>;
 
 #endif //NET_SIM_ZPO_TYPES_HPP

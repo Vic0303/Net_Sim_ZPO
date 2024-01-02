@@ -14,7 +14,6 @@ void NodeCollection<Node>::remove_by_id(ElementID id){
 }
 
 void Factory::do_work(Time time) {
-
     for (auto& worker : worker_){
         worker.do_work(time);
     }
@@ -27,10 +26,14 @@ void Factory::do_deliveries(Time time) {
 }
 
 void Factory::do_package_passing() {
-    for (auto& ramp : ramp_){
+    for (auto& ramp : ramp_) {
         ramp.send_package();
     }
-}
+
+    for(auto& worker : worker_) {
+        worker.send_package();
+    }
+};
 
 enum class NodeColor { UNVISITED, VISITED, VERIFIED };
 

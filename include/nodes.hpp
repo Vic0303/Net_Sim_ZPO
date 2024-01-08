@@ -15,7 +15,7 @@
 #include <map>
 #include "helpers.hpp"
 
-enum class ReceiverType {WORKER, STOREHOUSE};
+enum class ReceiverType {STOREHOUSE, WORKER};
 
 class IPackageReceiver{
 public:
